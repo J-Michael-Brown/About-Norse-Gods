@@ -41,8 +41,8 @@ module.exports = {
           emitWarning: true,
           configFile: "./.eslintrc.json"
           }
-        },
-        {
+      },
+      {
         test: /\.jsx?$/,
         loader: "babel-loader",
         exclude: /node_modules/,
@@ -54,15 +54,15 @@ module.exports = {
           plugins: [
             "react-hot-loader/babel"
           ]
-        },
-        {
-          test: /\.(png|gif|jp(e*)g|svg)$/,
-          use: {
-            loader: 'url-loader',
-            options: {
-              limit: 8000,
-              name: 'images/[hash]-[name].[ext]'
-            }
+        }
+      },
+      {
+        test: /\.(png|gif|jp(e*)g|svg)$/,
+        use: {
+          loader: 'url-loader',
+          options: {
+            limit: 8000,
+            name: 'images/[hash]-[name].[ext]'
           }
         }
       }
@@ -75,7 +75,7 @@ module.exports = {
     new HtmlWebpackPlugin({
       template:'template.ejs',
       appMountId: 'react-app-root',
-      title: 'React Help Queue',
+      title: 'About Us',
       filename: resolve(__dirname, "build", "index.html"),
     }),
   ]
