@@ -4,6 +4,7 @@ import React from 'react';
 import Header from './Header';
 import Splash from './Splash';
 import { Switch, Route } from 'react-router-dom';
+import AboutUs from './AboutUs';
 /* eslint-enable */
 
 function App() {
@@ -14,6 +15,7 @@ function App() {
       <Header/>
       <switch>
         <Route exact path='/' component={Splash}/>
+        <Route exact path='/about' component={AboutUs}/>
       </switch>
     </div>
 

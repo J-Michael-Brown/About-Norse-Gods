@@ -3,7 +3,7 @@ import React from 'react';
 function Splash(){
   return (
     <div>
-    Hello
+      We are Norse gods
     </div>
   );
 }
