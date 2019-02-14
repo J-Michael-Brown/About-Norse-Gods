@@ -1,11 +1,12 @@
 import React from 'react';
 import NorseGods from '../assets/god-array';
+import Profile from './Profile';
 
 function AboutUs(){
   return (
     <div>
       {NorseGods.map((profile, index) =>
-        <Month
+        <Profile
           name={profile.name}
           photo={profile.photo}
           about={profile.about}
