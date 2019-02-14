@@ -1,8 +1,9 @@
 import React from 'react';
+import {splashStyles} from '../css/styles.jsx';
 
 function Splash(){
   return (
-    <div>
+    <div style={splashStyles}>
       We are Norse gods
     </div>
   );

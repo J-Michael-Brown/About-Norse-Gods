@@ -3,7 +3,6 @@ import NorseGods from '../assets/god-array';
 import Profile from './Profile';
 
 function AboutUs(){
-  console.log(NorseGods);
   return (
     <div>
       {NorseGods.map((profile, index) =>

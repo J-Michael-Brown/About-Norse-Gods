@@ -4,9 +4,9 @@ import PropTypes from 'prop-types';
 function Profile(props){
   let fullQuote = props.quote;
   if(props.quoteAuthor) {
-    fullQuote+=` - ${props.quoteAuthor}`
+    fullQuote+=` - ${props.quoteAuthor}`;
   } else {
-    fullQuote+=` - ${props.name}`
+    fullQuote+=` - ${props.name}`;
   }
   return (
     <div>
