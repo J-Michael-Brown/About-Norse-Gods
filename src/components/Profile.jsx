@@ -1,20 +1,23 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import {profileStyles} from '../css/styles.jsx';
 
 function Profile(props){
-  let fullQuote = props.quote;
+  let quoteBy;
   if(props.quoteAuthor) {
-    fullQuote+=` - ${props.quoteAuthor}`;
+    quoteBy = props.quoteAuthor;
   } else {
-    fullQuote+=` - ${props.name}`;
+    quoteBy = props.name;
   }
   return (
     <div>
-      <h3>{props.name}</h3>
-      <img src={props.photo}/>
-      <p>{fullQuote}</p>
+      <div>
+        <img style={profileStyles.photo} src={props.photo}/>
+      </div>
+      <h3 style={profileStyles.name}>{props.name}</h3>
+      <p style={profileStyles.quote}>"{props.quote}" - <span style={profileStyles.quoteAuthor}>{quoteBy}</span></p>
       <hr/>
-      <p>{props.about}</p>
+      <p style={profileStyles.about}>{props.about}</p>
     </div>
   );
 }

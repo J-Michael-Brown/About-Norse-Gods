@@ -11,7 +11,7 @@ function App() {
 
   return (
 
-    <div>
+    <div class='container'>
       <Header/>
       <switch>
         <Route exact path='/' component={Splash}/>
